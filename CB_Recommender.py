@@ -1,8 +1,13 @@
-import nltk
+import sys
+
 import csv
 import re
+import nltk
 
-paper_ID=1213
+try:
+	paper_ID = sys.argv[1]
+except:
+	paper_ID=1
 
 cur=[]
 with open("papers_NLP.csv","rb") as f:
@@ -90,7 +95,6 @@ doc_lsi = lsi[vec_bow]
 sims = index[doc_lsi]
 sort_sims = sorted(enumerate(sims),key=lambda item:-item[1])
 
-print sort_sims[0:10]
 f = open('Recommend4Paper_'+PaperID[paper_ID]+'.txt', 'w')
 
 for i in range (0,500):
