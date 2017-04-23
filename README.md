@@ -5,7 +5,7 @@ Recommender academic articles with content-based recommender.
 Use content-based recommender to recommend papers most similar to a specific paper based on their content. The similarity can be adopted as the rating between papers, and collaborative filtering recommender can use the rating matrix to recommend papers better. The code of collaborative filtering is [here](https://github.com/riceroll/Collaborative_Filtering_Recommender).
 
 ### Dataset
-Abstracts of academeic articles from fields natural language processing, which is crawled from IEEE and ACM.
+Abstracts of academic articles from fields natural language processing, which is crawled from IEEE and ACM.
 
 ## Requirements
 
